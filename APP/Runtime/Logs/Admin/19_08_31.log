@@ -1,0 +1,1512 @@
+[ 2019-08-31T22:04:44+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028356s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.040039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068448s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0251s ]
+
+[ 2019-08-31T22:04:44+08:00 ] 127.0.0.1 /Admin/Pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004409s ]
+
+[ 2019-08-31T22:05:07+08:00 ] 127.0.0.1 /Admin/pubss/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.006036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006930s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0719s ]
+SQL: SELECT * FROM `ysk_admin` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: avatar C:\xampp\htdocs\www\paofen\APP\Admin\Model\ManageModel.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `ysk_upload` [ RunTime:0.0320s ]
+NOTIC: [8] Undefined index: email C:\xampp\htdocs\www\paofen\APP\Admin\Model\ManageModel.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `ysk_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: avatar C:\xampp\htdocs\www\paofen\APP\Admin\Model\ManageModel.class.php 第 189 行.
+
+[ 2019-08-31T22:05:10+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001967s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005332s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0263s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: gid C:\xampp\htdocs\www\paofen\APP\Admin\Controller\AdminController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0184s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1567180800 AND 1567267200 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `ysk_user` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0258s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0271s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0307s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0271s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `ysk_somebill` WHERE `jl_class` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\4d73593ea9413cb83b430e59017e71c1.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002776s ]
+
+[ 2019-08-31T22:05:15+08:00 ] 127.0.0.1 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004799s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0228s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0188s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'withdraw' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_withdraw` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 157 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2019-08-31T22:05:18+08:00 ] 127.0.0.1 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004515s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.6909s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0294s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0200s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'recharge' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_recharge` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0666s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2019-08-31T22:05:34+08:00 ] 127.0.0.1 /Admin/User/reedit/id/14/st/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004785s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0443s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0173s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'reedit' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `ysk_recharge` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+
+[ 2019-08-31T22:05:40+08:00 ] 127.0.0.1 /Admin/User/withdraw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003490s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0193s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'withdraw' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ysk_withdraw` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 157 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+NOTIC: [8] Undefined index: marker C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\83507804a92d4dd9c388590b9289ddd0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003261s ]
+
+[ 2019-08-31T22:05:44+08:00 ] 127.0.0.1 /Admin/User/ewm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.5208s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0531s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0162s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'ewm' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_ewm` [ RunTime:0.0321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_ewm` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_ewm` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\56d5e34f819a0d788f64ad813f5b8e22.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\56d5e34f819a0d788f64ad813f5b8e22.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2019-08-31T22:05:49+08:00 ] 127.0.0.1 /Admin/User/ewminfo/id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003845s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.1375s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0377s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0215s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'ewminfo' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_ewm` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `ysk_ewm` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\6b7536cd7199148ce0284f522e738895.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2019-08-31T22:05:59+08:00 ] 127.0.0.1 /Admin/User/bankcard.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002492s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006100s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0599s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0540s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'bankcard' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_bankcard` [ RunTime:0.0853s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_bankcard` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_bankcard` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c17ee00ea4af0522c1ce33ae29fcfb41.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c17ee00ea4af0522c1ce33ae29fcfb41.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2019-08-31T22:06:02+08:00 ] 127.0.0.1 /Admin/User/bill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0175s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'bill' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0364s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_somebill` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_somebill` ORDER BY uid desc LIMIT 0,15   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\b3f9b4b990f07db633b5c6a5a0a5f8cf.php 第 75 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.1908s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.293184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.293214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2019-08-31T22:06:09+08:00 ] 127.0.0.1 /Admin/Roborder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0287s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0195s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_roborder` ORDER BY price desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 73 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2019-08-31T22:06:16+08:00 ] 127.0.0.1 /Admin/Roborder/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002211s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004143s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.5769s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0962s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0449s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'add' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\7db83fe6b49177b6f1456edbd4a44dc2.php 第 73 行.
+NOTIC: [8] Undefined variable: info C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\7db83fe6b49177b6f1456edbd4a44dc2.php 第 145 行.
+NOTIC: [8] Undefined variable: info C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\7db83fe6b49177b6f1456edbd4a44dc2.php 第 163 行.
+NOTIC: [8] Undefined variable: extra_html C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\7db83fe6b49177b6f1456edbd4a44dc2.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2019-08-31T22:06:29+08:00 ] 127.0.0.1 /Admin/Roborder/ordersucc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004083s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.9032s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0162s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'ordersucc' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2019-08-31T22:06:35+08:00 ] 127.0.0.1 /Admin/Roborder/asystem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004331s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0217s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0184s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'asystem' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\768e6a9642bd0fb6836ed5da074a7c95.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2019-08-31T22:06:52+08:00 ] 127.0.0.1 /Admin/Tree/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002696s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004721s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0297s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0176s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Tree' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Tree' AND `act` = 'index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 0 ORDER BY userid asc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 1 ORDER BY userid asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 2 ORDER BY userid asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 3 ORDER BY userid asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 4 ORDER BY userid asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 5 ORDER BY userid asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 6 ORDER BY userid asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 7 ORDER BY userid asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE `pid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `pid` = 8 ORDER BY userid asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: i C:\xampp\htdocs\www\paofen\APP\Admin\Controller\TreeController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 134 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\e6ec180eceab7c3fd88cdd0ff446dca9.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2019-08-31T22:06:55+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002658s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0796s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0334s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0177s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` ORDER BY userid desc LIMIT 0,50   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\60dda32da550c2bcadbf7e515086a5c1.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 4 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2019-08-31T23:26:16+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004279s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0264s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0174s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Index' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = null LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: gid C:\xampp\htdocs\www\paofen\APP\Admin\Controller\AdminController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0193s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Index' AND `act` = 'index' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE ( reg_date BETWEEN 1567180800 AND 1567267200 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `ysk_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0313s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_withdraw` [ RunTime:0.0187s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_withdraw` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0207s ]
+SQL: SELECT SUM(price) AS tp_sum FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_somebill` [ RunTime:0.0192s ]
+SQL: SELECT SUM(num) AS tp_sum FROM `ysk_somebill` WHERE `jl_class` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\4d73593ea9413cb83b430e59017e71c1.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001417s ]
+
+[ 2019-08-31T23:26:23+08:00 ] 127.0.0.1 /Admin/Roborder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002691s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.5421s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0471s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0258s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'index' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_roborder` ORDER BY price desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 73 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2019-08-31T23:26:29+08:00 ] 127.0.0.1 /Admin/Roborder/edit/id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.1405s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0181s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0022s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `ysk_roborder` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+
+[ 2019-08-31T23:26:36+08:00 ] 127.0.0.1 /Admin/Roborder/edit/id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002746s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0211s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'edit' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `ysk_roborder` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\76b32c633c192e0493fefb69a489343f.php 第 73 行.
+NOTIC: [8] Undefined variable: extra_html C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\76b32c633c192e0493fefb69a489343f.php 第 214 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2019-08-31T23:26:44+08:00 ] 127.0.0.1 /Admin/Roborder/userrob.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002524s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.6852s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.3138s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0179s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'userrob' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2019-08-31T23:26:51+08:00 ] 127.0.0.1 /Admin/Roborder/putorder/id/47.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002455s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0217s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'putorder' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_ewm` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `ysk_ewm` WHERE `uid` = 3 AND `ewm_class` = 1 AND `ewm_price` <= 68666.024 ORDER BY ewm_price asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0262s ]
+SQL: INSERT INTO `ysk_roborder` (`class`,`price`,`addtime`,`status`,`uid`,`uname`,`umoney`,`pipeitime`,`ordernum`) VALUES ('1','20','1567265211','2','3','QWE','98094.32','1567265211','N926386449052') [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: yjjc C:\xampp\htdocs\www\paofen\APP\Admin\Controller\RoborderController.class.php 第 400 行.
+SQL: UPDATE `ysk_userrob` SET `price`='20',`ppid`='63',`status`='2',`pipeitime`='1567265211',`yjjc`=NULL WHERE `id` = 47 [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003432s ]
+
+[ 2019-08-31T23:26:52+08:00 ] 127.0.0.1 /Admin/Roborder/userrob.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002810s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.006012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008889s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0827s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0655s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0478s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0216s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'userrob' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008823s ]
+
+[ 2019-08-31T23:26:58+08:00 ] 127.0.0.1 /Admin/Roborder/userrob.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0297s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0229s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0007s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'userrob' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2019-08-31T23:27:01+08:00 ] 127.0.0.1 /Admin/Roborder/robsucc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004786s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0564s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.3188s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0796s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0171s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'robsucc' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 2 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\811e28fddfaa5b1318affe893598a192.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\811e28fddfaa5b1318affe893598a192.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003142s ]
+
+[ 2019-08-31T23:27:12+08:00 ] 127.0.0.1 /Admin/Roborder/ordersucc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002453s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.4992s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.3290s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0152s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'ordersucc' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2019-08-31T23:27:19+08:00 ] 127.0.0.1 /Admin/Roborder/asystem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002679s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0339s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0351s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0240s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0026s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'asystem' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\768e6a9642bd0fb6836ed5da074a7c95.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2019-08-31T23:27:25+08:00 ] 127.0.0.1 /Admin/Roborder/ordersucc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003966s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.1559s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0255s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0235s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'ordersucc' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\babc45aece350c17d8da7c7fc82e6283.php 第 157 行.
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0382s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_user` WHERE `userid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2019-08-31T23:27:29+08:00 ] 127.0.0.1 /Admin/Roborder/robsucc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003658s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0189s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0240s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0006s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'robsucc' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 2 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\811e28fddfaa5b1318affe893598a192.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\811e28fddfaa5b1318affe893598a192.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003393s ]
+
+[ 2019-08-31T23:27:32+08:00 ] 127.0.0.1 /Admin/Roborder/userrob.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.2779s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0298s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'userrob' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_userrob` [ RunTime:0.0352s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_userrob` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ysk_userrob` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\f0347a9f720ad42c1f1745e652c2a224.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2019-08-31T23:27:35+08:00 ] 127.0.0.1 /Admin/Roborder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002463s ]
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.4034s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0463s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0165s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'Roborder' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 352 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'Roborder' AND `act` = 'index' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_roborder` [ RunTime:0.0188s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_roborder` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_roborder` ORDER BY price desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 73 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\3009b9cfa9911f425c4c9ba5e415b9a6.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2019-08-31T23:27:39+08:00 ] 127.0.0.1 /Admin/User/recharge.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.004692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005572s ]
+NOTIC: [2] Declaration of Admin\Controller\UserController::setStatus($model = Admin\Controller\CONTROLLER_NAME) should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) C:\xampp\htdocs\www\paofen\APP\Admin\Controller\UserController.class.php 第 10 行.
+NOTIC: [2] Use of undefined constant MODEL_INSERT - assumed 'MODEL_INSERT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\www\paofen\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.8015s ]
+SQL: SHOW COLUMNS FROM `ysk_group` [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.0437s ]
+SQL: SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.0202s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE `col` = 'User' AND `status` = 1 AND `level` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `ysk_menu` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 1 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SELECT `auth_id` FROM `ysk_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ysk_menu` WHERE `status` = 1 AND `level` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT `col`,`act` FROM `ysk_menu` WHERE `level` = 2 AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE `col` = 'User' AND `act` = 'recharge' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ysk_recharge` [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_recharge` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ysk_recharge` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ysk_system` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `ysk_system` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: _user_auth C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 75 行.
+NOTIC: [8] Undefined index: keyword C:\xampp\htdocs\www\paofen\APP\Runtime\Cache\Admin\c3597ce05c8b81c5f841a7b8c4ff5b41.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
